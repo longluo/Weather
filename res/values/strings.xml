@@ -7,7 +7,7 @@
     <string name="filter_hint">输入城市名称</string>
     
     <string name="set_city">设置城市</string>
-    <string name="app_name">天气精灵</string>
+    <string name="app_name">天气</string>
     
     <string name="change_city">设置城市</string>
     <string name="update_weather">更新天气</string>

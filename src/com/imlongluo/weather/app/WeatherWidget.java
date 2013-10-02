@@ -62,10 +62,11 @@ public class WeatherWidget extends AppWidgetProvider {
 		// 得到天气缓冲文件中的有效期
 		long vaildTime = shared.getLong("validTime", currentTime);
 		// 比较天气缓存文件中的有效期，如果超时了，则访问网络更新天气
-		if (vaildTime <= currentTime)
+		if (vaildTime <= currentTime) {
 			updateWeather(views, context, cityCode);
-		else
+		} else {
 			updateWeather(views, context);
+		}
 
 		// 更新时间
 		Date date = new Date();

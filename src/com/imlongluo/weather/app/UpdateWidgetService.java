@@ -50,10 +50,8 @@ public class UpdateWidgetService extends Service {
 				SetCityActivity.CITY_CODE_FILE, SetCityActivity.MODE_PRIVATE);
 		String cityCode = sp.getString("code", "");
 		if (cityCode != null && cityCode.trim().length() > 0) {
-			Log.i("widget",
-					"===================update  weather===========================");
-			WeatherWidget.updateAppWidget(views, this, appWidgetManager,
-					cityCode);
+			Log.i("widget","===================update  weather===========================");
+			WeatherWidget.updateAppWidget(views, this, appWidgetManager, cityCode);
 		}
 		// ======================================================
 
