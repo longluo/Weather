@@ -274,7 +274,7 @@ public class SetCityActivity extends Activity {
 	//将res/raw中的城市数据库导入到安装的程序中的database目录下
     public void importInitDatabase() {
     	//数据库的目录
-    	String dirPath="/data/data/com.weather.app/databases";
+    	String dirPath="/data/data/com.imlongluo.weather/databases";
     	File dir = new File(dirPath);
     	if(!dir.exists()) {
     		dir.mkdir();
@@ -429,7 +429,7 @@ public class SetCityActivity extends Activity {
         
         //============================Create Database================================
         //打开或创建一个数据库
-        String path="/data"+ Environment.getDataDirectory().getAbsolutePath() + "/com.weather.app/db_weather.db";
+        String path="/data"+ Environment.getDataDirectory().getAbsolutePath() + "/com.imlongluo.weather/db_weather.db";
         
         SQLiteDatabase database = SQLiteDatabase.openOrCreateDatabase
                                   (path, null);
