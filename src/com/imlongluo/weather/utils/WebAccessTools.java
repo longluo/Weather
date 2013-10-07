@@ -13,9 +13,10 @@ import org.apache.http.util.EntityUtils;
 import android.content.Context;
 import android.widget.Toast;
 
-/**
+/**  
  * 
- * @author longluo 网站访问工具类，用于Android的网络访问
+ * 网站访问工具类，用于Android的网络访问
+ 网站访问工具类，用于Android的网络访问
  * 
  */
 public class WebAccessTools {
@@ -27,9 +28,7 @@ public class WebAccessTools {
 
 	/**
 	 * 构造一个网站访问工具类
-	 * 
-	 * @param context
-	 *            记录当前Activity中的Context上下文对象
+	 * @param context 记录当前Activity中的Context上下文对象
 	 */
 	public WebAccessTools(Context context) {
 		this.context = context;
@@ -37,9 +36,7 @@ public class WebAccessTools {
 
 	/**
 	 * 根据给定的url地址访问网络，得到响应内容(这里为GET方式访问)
-	 * 
-	 * @param url
-	 *            指定的url地址
+	 * @param url 指定的url地址
 	 * @return web服务器响应的内容，为<code>String</code>类型，当访问失败时，返回为null
 	 */
 	public String getWebContent(String url) {
